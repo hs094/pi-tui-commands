@@ -1,32 +1,41 @@
 {
-	"name": "pi-tui-commands",
-	"version": "0.1.0",
-	"description": "Interactive / command registry for pi — register any TUI tool as a slash command with binary-availability checks",
-	"keywords": [
-		"pi-package",
-		"pi-extension",
-		"tui",
-		"lazygit",
-		"interactive"
-	],
-	"license": "MIT",
-	"author": "",
-	"repository": {
-		"type": "git",
-		"url": ""
-	},
-	"pi": {
-		"extensions": ["./extensions/tui-commands/index.ts"],
-		"image": "https://pi.dev/logo-auto.svg"
-	},
-	"peerDependencies": {
-		"@earendil-works/pi-coding-agent": "*",
-		"@earendil-works/pi-tui": "*",
-		"typebox": "*"
-	},
-	"files": [
-		"extensions/",
-		"README.md",
-		"LICENSE"
-	]
+  "name": "pi-tui-commands",
+  "version": "0.1.0",
+  "description": "Interactive / command registry for pi — register any TUI tool as a slash command with binary-availability checks",
+  "keywords": [
+    "pi-package",
+    "pi-extension",
+    "tui",
+    "lazygit",
+    "interactive"
+  ],
+  "license": "MIT",
+  "author": "",
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "pi": {
+    "extensions": [
+      "./extensions/tui-commands/index.ts"
+    ],
+    "image": "https://pi.dev/logo-auto.svg"
+  },
+  "peerDependencies": {
+    "@earendil-works/pi-coding-agent": "*",
+    "@earendil-works/pi-tui": "*",
+    "typebox": "*"
+  },
+  "scripts": {
+    "format": "prettier --write .",
+    "format:check": "prettier --check ."
+  },
+  "files": [
+    "extensions/",
+    "README.md",
+    "LICENSE"
+  ],
+  "devDependencies": {
+    "prettier": "^3.9.5"
+  }
 }

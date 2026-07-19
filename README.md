@@ -30,14 +30,15 @@ Then `/reload` inside pi and run `/tuicmd`.
 
 ## Usage
 
-| Command | What it does |
-|---------|--------------|
-| `/tuicmd` | Open interactive toggle list |
-| `/tuicmd add lg lazygit` | Register `/lg` → `lazygit` |
-| `/tuicmd rm lg` | Remove `/lg` |
-| `/lazygit` | (if enabled) Run lazygit |
+| Command                  | What it does                 |
+| ------------------------ | ---------------------------- |
+| `/tuicmd`                | Open interactive toggle list |
+| `/tuicmd add lg lazygit` | Register `/lg` → `lazygit`   |
+| `/tuicmd rm lg`          | Remove `/lg`                 |
+| `/lazygit`               | (if enabled) Run lazygit     |
 
 In the TUI:
+
 - **Enter** toggles a tool ON/OFF
 - **/** fuzzy-searches by name
 - **Esc** closes
@@ -45,6 +46,7 @@ In the TUI:
 ## How it works
 
 When you toggle a tool ON, the extension:
+
 1. Checks `which <binary>` to verify it's installed
 2. Registers `/toolname` as a pi command via `pi.registerCommand()`
 3. The command handler calls `ctx.ui.custom()` to stop the TUI, spawns the
