@@ -10,10 +10,10 @@
     "interactive"
   ],
   "license": "MIT",
-  "author": "",
+  "author": "Hardik Soni",
   "repository": {
     "type": "git",
-    "url": ""
+    "url": "https://github.com/hs094/pi-tui-commands"
   },
   "pi": {
     "extensions": [
