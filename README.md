@@ -9,6 +9,8 @@ runs and restores pi when you quit.
 /tuicmd add htop  Register /htop as a command
 ```
 
+![](./assets/menu.png)
+
 ## Features
 
 - **Interactive UI** — `/tuicmd` opens a searchable toggle list (like
