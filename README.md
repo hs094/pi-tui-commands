@@ -25,7 +25,7 @@ runs and restores pi when you quit.
 ## Install
 
 ```bash
-pi install git:github.com/<your-org>/pi-tui-commands
+pi install npm:pi-tui-commands
 ```
 
 Then `/reload` inside pi and run `/tuicmd`.
@@ -58,7 +58,7 @@ When you toggle a tool ON, the extension:
 ## Development
 
 ```bash
-git clone <url>
+git clone https://github.com/hs094/pi-tui-commands
 cd pi-tui-commands
 pi -e ./extensions/tui-commands/index.ts
 ```

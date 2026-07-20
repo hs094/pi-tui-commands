@@ -1,5 +1,6 @@
 {
   "name": "pi-tui-commands",
+  "type": "module",
   "version": "0.1.0",
   "description": "Interactive / command registry for pi — register any TUI tool as a slash command with binary-availability checks",
   "keywords": [
@@ -11,31 +12,46 @@
   ],
   "license": "MIT",
   "author": "Hardik Soni",
+  "bugs": {
+    "url": "https://github.com/hs094/pi-tui-commands/issues"
+  },
+  "homepage": "https://github.com/hs094/pi-tui-commands#readme",
   "repository": {
     "type": "git",
-    "url": "https://github.com/hs094/pi-tui-commands"
+    "url": "git+https://github.com/hs094/pi-tui-commands.git"
+  },
+  "engines": {
+    "node": ">=20.19.0"
   },
   "pi": {
     "extensions": [
       "./extensions/tui-commands/index.ts"
     ],
-    "image": "https://pi.dev/logo-auto.svg"
+    "image": "https://raw.githubusercontent.com/hs094/pi-tui-commands/main/assets/menu.png"
   },
   "peerDependencies": {
-    "@earendil-works/pi-coding-agent": "*",
-    "@earendil-works/pi-tui": "*",
+    "@earendil-works/pi-coding-agent": ">=0.74.0",
+    "@earendil-works/pi-tui": ">=0.79.0",
     "typebox": "*"
   },
   "scripts": {
+    "check": "npm run typecheck && npm run format:check",
     "format": "prettier --write .",
-    "format:check": "prettier --check ."
+    "format:check": "prettier --check .",
+    "typecheck": "tsc --noEmit"
   },
   "files": [
-    "extensions/",
+    "CHANGELOG.md",
+    "LICENSE",
     "README.md",
-    "LICENSE"
+    "extensions/tui-commands/**"
   ],
   "devDependencies": {
-    "prettier": "^3.9.5"
+    "@earendil-works/pi-coding-agent": "^0.79.0",
+    "@earendil-works/pi-tui": "^0.79.0",
+    "@types/node": "^22.0.0",
+    "prettier": "^3.9.5",
+    "typebox": "^1.1.0",
+    "typescript": "^5.8.0"
   }
 }

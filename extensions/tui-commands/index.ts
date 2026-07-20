@@ -17,7 +17,7 @@
  */
 
 import type { ExtensionAPI } from '@earendil-works/pi-coding-agent';
-import { KNOWN_TOOLS, loadConfig, saveConfig, binaryExists } from './config.js';
+import { KNOWN_TOOLS, loadConfig, saveConfig } from './config.js';
 import { registerTuiCommand, syncEnabled } from './runner.js';
 import { showManager } from './ui.js';
 
