@@ -1,7 +1,7 @@
 # pi-tui-commands
 
 <p align="center">
-  <img src="./assets/logo.png" width="50" height="50" alt="pi-tui-commands logo">
+  <img src="./assets/logo.png" width="300" height="300" alt="pi-tui-commands logo">
 </p>
 
 Interactive `/` command registry for [pi](https://pi.dev). Register any TUI
