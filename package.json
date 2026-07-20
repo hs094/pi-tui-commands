@@ -27,7 +27,7 @@
     "extensions": [
       "./extensions/tui-commands/index.ts"
     ],
-    "image": "https://raw.githubusercontent.com/hs094/pi-tui-commands/main/assets/menu.png"
+    "image": "https://raw.githubusercontent.com/hs094/pi-tui-commands/main/assets/logo.png"
   },
   "peerDependencies": {
     "@earendil-works/pi-coding-agent": ">=0.74.0",
